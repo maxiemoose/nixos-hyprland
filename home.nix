@@ -17,8 +17,8 @@ in
     ./modules/theme.nix
   ];
 
-  home.username = "tony";
-  home.homeDirectory = "/home/tony";
+  home.username = "maxie";
+  home.homeDirectory = "/home/maxie";
   home.stateVersion = "25.05";
   programs.bash = {
     enable = true;
