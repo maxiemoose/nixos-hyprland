@@ -226,10 +226,10 @@ vim home.nix
 Alright we're finally ready to install this. We can do that with this command here, to specify the location of the flake.
 
 #+begin_src sh
-nixos-install --flake /mnt/etc/nixos#nixos-btw
+nixos-install --flake /mnt/etc/nixos#moose
 
 ## type your password
-nixos-enter --root /mnt -c 'passwd tony'
+nixos-enter --root /mnt -c 'passwd maxie'
 reboot
 #+end_src
 
