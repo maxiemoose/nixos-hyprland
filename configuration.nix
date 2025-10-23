@@ -9,12 +9,12 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "hyprland-btw";
+  networking.hostName = "moose";
   networking.networkmanager.enable = true;
 
   time.timeZone = "America/Los_Angeles";
 
-  services.getty.autologinUser = "tony";
+  services.getty.autologinUser = "maxie";
 
   programs.hyprland = {
     enable = true;
@@ -22,7 +22,7 @@
     withUWSM = true;
   };
 
-  users.users.tony = {
+  users.users.maxie = {
     isNormalUser = true;
     extraGroups = [ "wheel" ];
     packages = with pkgs; [
@@ -40,6 +40,8 @@
     waybar
     git
     hyprpaper
+    hyprlock
+    fish
   ];
 
   fonts.packages = with pkgs; [
